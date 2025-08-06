@@ -1,4 +1,4 @@
-public class Animal {
+public abstract class Animal {
     private String name;
 
     public Animal(){}
@@ -6,18 +6,11 @@ public class Animal {
     public Animal(String name){
         this.name=name;
     }
-    public void eat(){
-        System.out.println(name+"  cat is eating");
-    }
-    public void makeNoise(){
-        System.out.println(name+"  is making noise");
-    }
-    public void sleep(){
-        System.out.println(name+"  dog is sleeping");
-    }
-    public void roam(){
-        System.out.println(name+"  cat is roaming");
-    }
+    public abstract void eat();
+    public abstract void  makeNoise();
+    public abstract void sleep();
+    public abstract void roam();
+
 
     public String getName() {
         return name;
@@ -26,4 +19,5 @@ public class Animal {
     public void setName(String name) {
         this.name = name;
     }
+
 }
