@@ -1,3 +1,5 @@
+package com.masai.entity;
+
 public abstract class Bird extends Animal{
 
     public Bird() {

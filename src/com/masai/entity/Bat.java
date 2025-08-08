@@ -1,9 +1,6 @@
-public class Dog extends Animal{
-    public Dog(){}
+package com.masai.entity;
 
-    public Dog(String name){
-        super(name);
-    }
+public class Bat extends Animal{
 
     @Override
     public void eat() {
@@ -25,9 +22,10 @@ public class Dog extends Animal{
         System.out.println(getName()+"bird is roaming");
     }
 
-    public void play() {
-        System.out.println(getName()+" Playing");
+    public Bat() {
     }
 
-
+    public Bat(String name) {
+        super(name);
+    }
 }

@@ -1,4 +1,8 @@
-public class Parrot extends Bird{
+package com.masai.entity;
+
+import java.util.SortedMap;
+
+public class Parrot extends Bird implements Flyable{
 
 
     public Parrot() {
@@ -27,5 +31,15 @@ public class Parrot extends Bird{
     public void roam() {
 
     }
+
+    @Override
+    public void fly() {
+        System.out.println(getName()+"is Flying");
+    }
+
+
+
+
+
 
 }

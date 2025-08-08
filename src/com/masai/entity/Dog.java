@@ -1,4 +1,11 @@
-public class Bat extends Animal{
+package com.masai.entity;
+
+public class Dog extends Animal implements Flyable{
+    public Dog(){}
+
+    public Dog(String name){
+        super(name);
+    }
 
     @Override
     public void eat() {
@@ -20,10 +27,15 @@ public class Bat extends Animal{
         System.out.println(getName()+"bird is roaming");
     }
 
-    public Bat() {
+    public void play() {
+        System.out.println(getName()+" Playing");
     }
 
-    public Bat(String name) {
-        super(name);
+
+    @Override
+    public void fly() {
+
+            System.out.println(getName()+"is Flying");
+
     }
 }

@@ -1,6 +1,12 @@
+package com.masai.utils;
+
+import com.masai.entity.Animal;
+import com.masai.entity.Cat;
+import com.masai.entity.Dog;
+
 public class AnimalUtils {
     public void addanimal(Animal animal){
-        System.out.println("Animal added: "+animal.getName());
+        System.out.println("com.masai.entity.Animal added: "+animal.getName());
         animal.makeNoise();
 
         if(animal instanceof Cat){

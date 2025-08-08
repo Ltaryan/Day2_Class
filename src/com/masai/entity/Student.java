@@ -1,3 +1,5 @@
+package com.masai.entity;
+
 public class Student extends Person{
     private int roll;
     private String grade;

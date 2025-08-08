@@ -1,3 +1,5 @@
+package com.masai.entity;
+
 public class Person {
     private String name;
     private int age;
@@ -33,6 +35,6 @@ public class Person {
         this.address = address;
     }
     public void displayInfo(){
-        System.out.println(" Age: " +age+" Name: " +name+  " Address: " +address.toString());
+        System.out.println(" Age: " +age+" Name: " +name+  " com.masai.entity.Address: " +address.toString());
     }
 }

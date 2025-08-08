@@ -1,4 +1,6 @@
-public class Fish extends Animal{
+package com.masai.entity;
+
+public class Fish extends Animal implements Flyable{
     @Override
     public void eat() {
         System.out.println(getName()+"Eating");
@@ -24,5 +26,10 @@ public class Fish extends Animal{
     }
 
     public Fish() {
+    }
+
+    @Override
+    public void fly() {
+        System.out.println(getName()+"is Flying");
     }
 }

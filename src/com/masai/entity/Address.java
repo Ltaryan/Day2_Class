@@ -1,4 +1,4 @@
-import java.lang.foreign.PaddingLayout;
+package com.masai.entity;
 
 public class Address{
 
@@ -39,7 +39,7 @@ public class Address{
 
     @Override
     public String toString() {
-        return "Address{" +
+        return "com.masai.entity.Address{" +
                 "city='" + city + '\'' +
                 ", state='" + state + '\'' +
                 ", pin=" + pin +
